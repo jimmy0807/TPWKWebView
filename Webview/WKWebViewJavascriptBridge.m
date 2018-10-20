@@ -140,11 +140,6 @@
 }
 
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
-    
-    if ([[SensorsAnalyticsSDK sharedInstance] showUpWebView:webView WithRequest:navigationAction.request enableVerify:YES]) {
-        decisionHandler(WKNavigationActionPolicyCancel);
-        return;
-    }
     if (webView != _webView) { return; }
     NSURL *url = navigationAction.request.URL;
     NSLog(@"url : %@",url);

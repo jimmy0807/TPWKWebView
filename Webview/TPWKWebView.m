@@ -185,10 +185,6 @@
 
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
-    if ([[SensorsAnalyticsSDK sharedInstance] showUpWebView:webView WithRequest:navigationAction.request enableVerify:YES]) {
-        decisionHandler(WKNavigationActionPolicyCancel);
-        return;
-    }
     if ( self.urlObserve )
     {
         NSString *url = navigationAction.request.URL.absoluteString;

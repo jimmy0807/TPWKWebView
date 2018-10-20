@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy)void (^titleObserve)(NSString* title);
 @property(nonatomic, copy)void (^goBackObserve)(BOOL canGoBack);
 @property(nonatomic, copy)BOOL (^urlObserve)(NSString* url);
-@property(nonatomic, copy)void (^loadFail)();
+@property(nonatomic, copy)void (^loadFail)(void);
 @property(nonatomic, strong)WKWebView* webView;
 @property (nonatomic, strong) UIScrollView *scrollView;
 - (void)reSetWebFrameWith:(CGRect)frame;
