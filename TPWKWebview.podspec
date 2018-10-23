@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TPWKWebview"
-  s.version      = "0.0.3"
+  s.version      = "0.0.5"
   s.summary      = "JSBridge For iOS"
 
   # This description is used to generate tags and improve search results.

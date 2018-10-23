@@ -39,9 +39,10 @@
     return self;
 }
 
-- (void)setFrame:(CGRect)frame
+- (void)layoutSubviews
 {
-    [super setFrame:frame];
+    [super layoutSubviews];
+    
     self.webView.frame = self.bounds;
 }
 
