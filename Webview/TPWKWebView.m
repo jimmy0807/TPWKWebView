@@ -39,6 +39,12 @@
     return self;
 }
 
+- (void)setFrame:(CGRect)frame
+{
+    [super setFrame:frame];
+    self.webView.frame = self.bounds;
+}
+
 - (WKWebViewConfiguration *)configConfiguration {
     // 这是创建configuration 的过程
     WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
