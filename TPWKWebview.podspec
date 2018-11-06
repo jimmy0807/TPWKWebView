@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   JSBridge TPWKWebview
                    DESC
 
-  s.homepage     = "https://github.com/jimmy808126/TPWKWebView"
+  s.homepage     = "https://github.com/jimmy0807/TPWKWebView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/jimmy808126/TPWKWebView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/jimmy0807/TPWKWebView.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
