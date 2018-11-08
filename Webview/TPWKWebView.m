@@ -59,8 +59,8 @@
 - (void)setUrl:(NSString *)url
 {
     _url = url;
-    [[NSURLCache sharedURLCache] removeAllCachedResponses];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:30]];
+    
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30]];
 }
 
 - (void)setProgressColor:(UIColor *)progressColor
